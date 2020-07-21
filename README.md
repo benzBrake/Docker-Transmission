@@ -1,6 +1,6 @@
 # benzbrake/transmission
 
-[中文说明](https://github.com/benzBrake/Docker-Transmission/raw/master/README.zh-CN.md)
+[中文说明](README.zh-CN.md)
 
 [Transmission](https://www.transmissionbt.com/) is designed for easy, powerful use. Transmission has the features you want from a BitTorrent client: encryption, a web interface, peer exchange, magnet links, DHT, µTP, UPnP and NAT-PMP port forwarding, webseed support, watch directories, tracker editing, global and per-torrent speed limits, and more.
 
