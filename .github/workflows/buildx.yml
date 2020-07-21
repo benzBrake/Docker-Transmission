@@ -1,5 +1,7 @@
 name: buildx
 on:
+  schedule:
+    - cron:  '0 1 * * 0'
   push:
     branches:
       - 'master'
@@ -31,9 +33,6 @@ jobs:
           
           # Use Docker `latest` tag convention
           [ "$VERSION" == "master" ] && VERSION=latest
-          
-          # ADD Build Args for pt
-          [ "$VERSION" == "pt" ] && OTHER_BUILD_ARGS="--build-arg TR_SETTINGS=settings-pt.json"
 
           TAGS="--tag ${DOCKER_IMAGE}:${VERSION}"
           echo ::set-output name=docker_image::${DOCKER_IMAGE}

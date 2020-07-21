@@ -2,6 +2,7 @@
 export PATH=${PATH}:/usr/bin:/bin
 # Create directory
 mkdir -pv /var/lib/transmission/downloads /var/lib/transmission/incomplete /var/lib/transmission/watch
+
 # Use default settings when settings.json is not exists
 if [[ ! -f /var/lib/transmission/settings.json ]]; then
     cp -f /data/settings.json /var/lib/transmission/settings.json
